@@ -1,0 +1,130 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Patrick+Hand+SC&display=swap');
+
+@font-face {
+    font-family: "GANG BANG CRIME";
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/GANG_BANG_CRIME.ttf);
+    font-weight:400;
+}
+
+body {
+  padding: 50px;
+  background-color: blue;
+}
+
+h3{
+  font-family: 'Finger Paint', cursive;
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 105px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.street {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2em;
+}
+
+.street .sky-scraper {
+  background: #061019;
+  color: white;
+
+  height: 80px;
+  width: 25px;
+  padding: 10px;
+  margin-right: 20px;
+
+  writing-mode: vertical-lr;
+  line-height: 30px;
+  font-family: 'Finger Paint', cursive;
+  font-size: 18px;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.street .sky-scraper.active {
+  background: blue; 
+  color:blue;
+}
+
+.street .sky-scraper:hover {
+  background: #AB1119;
+  color: white;
+}
+
+.photo-detail {
+  display: flex;
+}
+
+.photo-detail .figure {
+  width: 150px;
+  flex: none;
+  margin-right: 30px;
+}
+
+.photo-detail .cover-image {
+  width: 300%;
+  border: 5px solid white;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.photo-detail .info {
+  max-width: 700px;
+  margin-top: 20px;
+  margin-left: 350px;
+  font-size: 18px;
+  font-family: 'Finger Paint', cursive;
+}
+
+.photo-detail .title {
+  max-width: 600px;
+  font-family: 'Finger Paint', cursive;
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.photo-detail .description {
+  max-width: 600px;
+  margin-top: 0.5em;
+  color: white;
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 24px;
+  line-height: auto;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: blue;
+  background-color: #24c971;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .photo-detail {
+    flex-direction: column;
+  }
+  .photo-detail .figure {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+}
+
+
+

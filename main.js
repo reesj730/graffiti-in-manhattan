@@ -38,7 +38,7 @@ function showPhotos() {
 
   photos.forEach((photo) => {
     const div = document.createElement("div");
-    div.innerText = photo.fields.title;
+    div.innerText = photo.fields.year;
     div.classList.add("sky-scraper");
     div.addEventListener("click", () => {
       showPhoto(photo, div);
