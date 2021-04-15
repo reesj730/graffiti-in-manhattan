@@ -319,6 +319,33 @@ a{
   }
 }
 
+/* button */
+
+.up:hover,
+.round:hover
+{
+  background-color: #FF00FF;
+  color: white;
+}
+
+.button{
+  position: absolute;
+  top: 10.15%;
+  margin-left: 26.5%;
+  text-decoration: none;
+}
+
+.next, .up {
+  background-color: #00C868;
+  color: black;
+
+}
+
+.round {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 8px 16px;
+}
 
 
 /* media queries */
